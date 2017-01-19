@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff"
+    tools:context="com.liangyang.customviewredcard.MainActivity">
+
+    <Button
+        android:id="@+id/mode_btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="卡券模式1"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/mode_btn_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="卡券模式2"
+        android:onClick="onClick"/>
+
+
+
+</LinearLayout>
