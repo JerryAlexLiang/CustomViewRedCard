@@ -57,8 +57,5 @@ public class MyCardViewTwo extends LinearLayout {
         for (int i = 0; i < roundNum; i++) {
             canvas.drawCircle((gap + radius) * (2 * i - 1), radius * 2, radius, mPaint);
         }
-//        for (int i = 1; i <= getWidth() / (radius * 2 + gap * 2); i++) {
-//            canvas.drawCircle((gap + radius) * (2 * i - 1), radius * 2, radius, mPaint);
-//        }
     }
 }
