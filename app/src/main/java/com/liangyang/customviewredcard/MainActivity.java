@@ -23,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.mode_btn_two:
                 intent.setClass(MainActivity.this, CardTwoActivity.class);
                 break;
+
+            case R.id.mode_btn_three:
+                intent.setClass(MainActivity.this,CardThreeActivity.class);
+                break;
+
         }
         startActivity(intent);
     }

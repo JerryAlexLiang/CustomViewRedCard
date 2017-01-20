@@ -21,7 +21,7 @@
             android:layout_gravity="center_vertical"
             android:text="￥2.3"
             android:textColor="#ffffff"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <View
             android:layout_width="1dp"
@@ -76,7 +76,7 @@
         android:layout_height="120dp"
         android:background="#5ED6FF"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:padding="20dp">
 
         <TextView
@@ -140,7 +140,7 @@
         android:layout_height="120dp"
         android:background="#5ED6FF"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:padding="20dp">
 
         <TextView

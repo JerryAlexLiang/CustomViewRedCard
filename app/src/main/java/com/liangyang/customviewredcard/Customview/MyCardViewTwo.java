@@ -15,9 +15,9 @@ import android.widget.LinearLayout;
 public class MyCardViewTwo extends LinearLayout {
 
     //圆的半径
-    private int radius = 6;
+    private int radius = 8;
     //圆之间的距离
-    private int gap = 6;
+    private int gap = 8;
     private Paint mPaint;
 
     public MyCardViewTwo(Context context) {
@@ -27,10 +27,12 @@ public class MyCardViewTwo extends LinearLayout {
 
     public MyCardViewTwo(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init();
     }
 
     public MyCardViewTwo(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init();
     }
 
     /**
@@ -51,9 +53,12 @@ public class MyCardViewTwo extends LinearLayout {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        for (int i = 1; i <= getWidth() / (radius * 2 + gap * 2); i++) {
-            //canvas.drawCircle((gap + radius) * (2 * i - 1), radius * 2, radius, mPaint);
+        int roundNum = getWidth() / (radius * 2 + gap * 2);
+        for (int i = 0; i < roundNum; i++) {
             canvas.drawCircle((gap + radius) * (2 * i - 1), radius * 2, radius, mPaint);
         }
+//        for (int i = 1; i <= getWidth() / (radius * 2 + gap * 2); i++) {
+//            canvas.drawCircle((gap + radius) * (2 * i - 1), radius * 2, radius, mPaint);
+//        }
     }
 }
